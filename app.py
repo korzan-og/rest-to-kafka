@@ -28,7 +28,7 @@ def healthCheck():
     logging.info("getHealthCheck exit")
     return jsonify(healthResponse), 200
 
-@app.route('/post', methods=['POST'])
+@app.route('/items', methods=['POST'])
 def managePosts():
     logging.info("post enter")
     logging.info("Requestor IP : " + request.remote_addr)
